@@ -27,3 +27,11 @@ This means that a red color shift for the letter A, which is 65 + 0 = 65, would 
 Given this verticode, read the verticode into text and find the flag.
 
 Note that the flag will not be in the typical sctf{flag} format, but will be painfully obvious text. Once you find this text, you will submit it in the sctf{text} format. So, if the text you find is adunnaisawesome, you will submit it as sctf{adunnaisawesome}.
+
+# decode.sh
+## Running:
+`chmod +x decode.sh`
+then
+`./decode.sh code1.png`
+
+Sorry about the great number of temporary files, but I did this step by step on the shell :)
