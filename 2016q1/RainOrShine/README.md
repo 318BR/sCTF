@@ -1,12 +1,10 @@
 #Rain Or Shine
 
 
-This one we couldn't crack in time, mostly because I first found a JPEG signature which turned out to be just the thumbnail of the original image. 
+This one we couldn't crack in time, mostly because I first found a JPEG signature which turned out to be just the thumbnail of the original image, what cost us a lot of time, and also because GIMP wouldn't open layered TIFFs. 
 
-That cost us a lot of time, and secondly because GIMP wouldn't open layered TIFFs. 
+Because of this, we spent a lot of time trying to manually reassemble the QR Code, which was impossible since there were overlayed layers.
 
-
-Because of this, we spent a lot of time trying to manually reassbemble the QR Code, which was impossible since there were overlayed layers.
 By the time I got access to a friend with Photoshop, the challenge was ended.
 
 Cutting to the chase: Open the `rain.wav` file in your favourite hex editor (mine is bless). Keep digging until you find a TIFF header:
