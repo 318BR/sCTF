@@ -21,10 +21,10 @@ do
 		if [ "$char" == "'" ]; then
 			start=0;
 		fi
-		(( $abriu == 1)) && {
+		(( $start == 1)) && {
 			resp+=$char; 
 		}
-		if (( ${#resp} > 1500 )) && (( $abriu == 0 )); then
+		if (( ${#resp} > 1500 )) && (( $start == 0 )); then
 			echo -n "${resp}" | base64 -d >/dev/null && {
 				echo -n "${resp}" | base64 -d > file.png
 				print=1;
